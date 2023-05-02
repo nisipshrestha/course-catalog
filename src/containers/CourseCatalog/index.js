@@ -64,7 +64,6 @@ const CourseCatalog = () => {
         }
         if (param.instructors.length > 0) {
           result = result && param.instructors.includes(each.instructor);
-          console.log(param.instructors, result);
         }
         return result;
       })
