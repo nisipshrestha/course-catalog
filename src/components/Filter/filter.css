@@ -1,0 +1,79 @@
+.filter {
+  transition: all 0.2s ease-in-out;
+  width: 0;
+  height: 0;
+}
+
+.filter.visible {
+  grid-column: 1 /-1;
+  grid-row: 1;
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+
+.filter #toggle {
+  display: none;
+}
+
+.filter .toggle-icon {
+  cursor: pointer;
+  margin-right: 8px;
+  position: absolute;
+  top: 18px;
+  left: 15px;
+}
+.filter .toggle-icon i {
+  color: #fff;
+  font-size: 24px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Filter container */
+.filter.visible .filter-container {
+  color: var(--form-label);
+  height: 100vh;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 32px 16px;
+  overflow-y: auto;
+  background: #fff;
+}
+
+.filter-container .search-wrapper {
+  margin-bottom: 16px;
+}
+
+/* generic h3 */
+.filter-by h3 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.filter-by .filter-text {
+  color: inherit;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border);
+  padding: 8px;
+  margin-bottom: 24px;
+}
+
+.filter-by i {
+  color: var(--border);
+  margin-right: 8px;
+}
+
+.filter-by .filter-text button {
+  cursor: pointer;
+  color: inherit;
+  border: none;
+  background: none;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 780px) {
+  .filter.visible {
+    grid-column: 1 / auto;
+    min-width: 300px;
+  }
+}

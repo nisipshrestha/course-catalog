@@ -1,0 +1,17 @@
+.nav {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  padding: 16px 8px;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(82, 42, 109, 1) 0%,
+    rgba(154, 35, 151, 1) 100%
+  );
+}
+
+.nav h1 {
+  font-size: 24px;
+  margin: 0 0 0 50px;
+}

@@ -1,0 +1,64 @@
+/* wraps for aside & courses-wrapper */
+.courses-container {
+  grid-template-columns: 1fr;
+  overflow: hidden;
+}
+
+.courses-wrapper {
+  align-self: self-start;
+  padding: 16px;
+  margin: 24px 32px;
+  background-color: #eff0f2;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto minmax(100px, 1fr);
+  gap: 16px;
+}
+
+.courses-wrapper h2 {
+  grid-column: 1/-1;
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.courses {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+@media screen and (min-width: 560px) {
+  .courses {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .courses-wrapper {
+    grid-row: 1;
+  }
+  .courses-wrapper h2 {
+    font-size: 24px;
+  }
+  .courses {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .courses-container.filter-open {
+    grid-template-columns: 1fr auto;
+  }
+  .courses-wrapper {
+    padding: 24px;
+  }
+  .courses {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .courses-container.filter-open {
+    grid-template-columns: 1fr 4fr;
+  }
+  .courses {
+    grid-template-columns: 1fr;
+  }
+}
