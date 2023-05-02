@@ -1,0 +1,47 @@
+/* Text */
+.custom-textfield {
+  padding: 8px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  outline: none;
+}
+
+.custom-textfield::placeholder {
+  color: var(--border);
+  font-style: italic;
+}
+
+/* Search */
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  color: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding-left: 4px;
+}
+
+.search-wrapper input {
+  width: 100%;
+  border: none;
+}
+/* Magnifying glass icon */
+.search-wrapper i {
+  font-size: 14px;
+}
+
+/* Checkbox */
+.checkbox-wrapper {
+  gap: 8px;
+}
+.checkbox-wrapper input {
+  width: 24px;
+  height: 24px;
+  accent-color: var(--form-label);
+}
+
+.checkbox-wrapper label {
+  font-size: 16px;
+}
