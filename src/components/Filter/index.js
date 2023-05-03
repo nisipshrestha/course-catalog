@@ -1,6 +1,6 @@
 import Collapsible from "../Collapsible";
-import Checkbox from "../Input/Checkbox";
-import SearchField from "../Input/SearchField";
+import Checkbox from "../Checkbox";
+import SearchField from "../SearchField";
 import ToggleIcon from "./ToggleIcon";
 import "./filter.css";
 
@@ -47,6 +47,7 @@ const Filter = ({
                 <Checkbox
                   onChange={onSearch}
                   name="allCategories"
+                  id="allCategories"
                   label="Select All"
                   checked={
                     filterCollection?.categories?.length ===
@@ -64,6 +65,7 @@ const Filter = ({
                       onChange={onSearch}
                       name="category"
                       key={each}
+                      id={each}
                       label={each}
                       checked={filterData.categories.includes(each)}
                       value={each}
@@ -78,6 +80,7 @@ const Filter = ({
                     onChange={onSearch}
                     name="type"
                     key={each}
+                    id={each}
                     label={each}
                     value={each}
                   />
@@ -89,6 +92,7 @@ const Filter = ({
                 <Checkbox
                   onChange={onSearch}
                   name="allInstructors"
+                  id="allInstructors"
                   label="Select All"
                   checked={
                     filterCollection?.instructors?.length ===
@@ -100,6 +104,7 @@ const Filter = ({
                     onChange={onSearch}
                     name="instructor"
                     key={each}
+                    id={each}
                     label={each}
                     value={each}
                     checked={filterData.instructors.includes(each)}

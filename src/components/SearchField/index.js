@@ -1,4 +1,6 @@
-import TextField from "./TextField";
+import "./search.css";
+
+import TextField from "../Input";
 
 const SearchField = ({ name, onChange, value, placeholder }) => {
   return (
