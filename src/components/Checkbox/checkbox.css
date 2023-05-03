@@ -1,0 +1,13 @@
+/* Checkbox */
+.checkbox-wrapper {
+  gap: 8px;
+}
+.checkbox-wrapper input {
+  width: 24px;
+  height: 24px;
+  accent-color: var(--form-label);
+}
+
+.checkbox-wrapper label {
+  font-size: 16px;
+}
